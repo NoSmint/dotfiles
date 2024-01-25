@@ -88,7 +88,7 @@ filepos_max_saved_entries=1024
 
 [Layout]
 output_lines=0
-left_panel_size=120
+left_panel_size=82
 top_panel_size=0
 message_visible=false
 keybar_visible=true
@@ -105,7 +105,7 @@ timeformat_recent=%b %e %H:%M
 timeformat_old=%b %e  %Y
 ftp_proxy_host=gate
 ftpfs_password=anonymous@
-display_codepage=UTF-8
+display_codepage=ASCII
 source_codepage=Other_8_bit
 autodetect_codeset=
 spell_language=en
@@ -141,7 +141,7 @@ select_flags=6
 simple_swap=false
 
 [Panelize]
-Modified git files=git ls-files --modified
 Find *.orig after patching=find . -name \\*.orig -print
-Find rejects after patching=find . -name \\*.rej -print
 Find SUID and SGID programs=find . \\( \\( -perm -04000 -a -perm /011 \\) -o \\( -perm -02000 -a -perm /01 \\) \\) -print
+Find rejects after patching=find . -name \\*.rej -print
+Modified git files=git ls-files --modified
