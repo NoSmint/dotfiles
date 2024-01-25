@@ -19,7 +19,6 @@ The dotfiles in this repository are managed using a bare Git repository, a metho
 - `qterminal`
 - `midnight commander`
 - `btop`
-- `thunar`
 - `neofetch`
 - `Obsidian`
 - `lf`
