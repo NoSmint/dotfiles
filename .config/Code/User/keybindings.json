@@ -1,0 +1,14 @@
+[
+    {
+      "key": "backspace",
+      "command": "workbench.action.terminal.sendSequence",
+      "args": { "text": "\u0008" }, // Sends ^H
+      "when": "terminalFocus"
+    },
+    {
+      "key": "ctrl+backspace",
+      "command": "workbench.action.terminal.sendSequence",
+      "args": { "text": "\u007f" }, // Sends ^?
+      "when": "terminalFocus"
+    }
+  ]

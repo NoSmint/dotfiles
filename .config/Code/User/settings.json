@@ -1,0 +1,124 @@
+{
+  // Editor Configuration
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.find.autoFindInSelection": "multiline",
+    "editor.find.seedSearchStringFromSelection": "selection",
+    "editor.fontFamily": "MesloLGS NF, Regular, Hack NF, Regular",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "[jsonc]": {
+        "editor.formatOnSave": false
+      },
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.lineHeight": 22,
+    "editor.linkedEditing": true,
+    "editor.quickSuggestionsDelay": 50,
+    "editor.suggest.showStatusBar": true,
+    "editor.tabCompletion": "on",
+    "editor.tokenColorCustomizations": {
+        "functions": "#d1d14d",
+        "variables": "#00a6ff",
+        "comments": "#6A9955"
+    },
+    "editor.unicodeHighlight.nonBasicASCII": true,
+    "editor.acceptSuggestionOnEnter": "smart",
+
+  // PHP Configuration
+    "php.suggest.basic": true,
+    "php.validate.enable": true,
+
+  // PowerShell Configuration
+    "powershell.startAutomatically": true,
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.integratedConsole.focusConsoleOnExecute": true,
+    "powershell.codeFormatting.preset": "Stroustrup",
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+    "powershell.codeFormatting.whitespaceBetweenParameters": true,
+
+  // Terminal Configuration
+    "terminal.external.linuxExec": "xterm-256",
+    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "none",
+    "terminal.integrated.cursorWidth": 0,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.fontFamily": "MesloLGS NF, Regular, Hack NF, Regular",
+
+  // File and Workspace Configuration
+    "files.associations": {
+        "*.zsh": "shellscript",
+        "*.sh": "shellscript",
+        "*.md": "markdown"
+    },
+    "files.enableTrash": false,
+    "files.exclude": {
+        "desktop.ini": true
+    },
+    "files.hotExit": "off",
+    "files.insertFinalNewline": true,
+    "files.readonlyFromPermissions": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.ignoredSettings": [
+      "editor.fontSize",
+      "editor.fontFamily",
+      "terminal.integrated.fontFamily",
+    ],
+
+  // Workbench Configuration
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.navigationScope": "editorGroup",
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.untitled.labelFormat": "name",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+    "workbench.reduceMotion": "off",
+    "workbench.startupEditor": "newUntitledFile",
+
+  // Window Configuration
+    "window.autoDetectHighContrast": false,
+    "window.commandCenter": false,
+    "window.dialogStyle": "custom",
+    "window.newWindowDimensions": "inherit",
+    "window.openWithoutArgumentsInNewWindow": "off",
+    "window.restoreWindows": "none",
+    "window.titleSeparator": " · ",
+
+  // Explorer Configuration
+    "explorer.autoReveal": "focusNoScroll",
+    "explorer.incrementalNaming": "smart",
+    "explorer.sortOrder": "type",
+
+  // Extensions Configuration
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    "extensions.ignoreRecommendations": true,
+
+  // Miscellaneous
+    "diffEditor.codeLens": true,
+    "diffEditor.maxComputationTime": 15000,
+    "glassit.alpha": 252,
+    "html.format.contentUnformatted": "pre,code,textarea",
+    "liveServer.settings.donotVerifyTags": true,
+    "rewrap.wrappingColumn": 100,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "zenMode.restore": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "git.enableSmartCommit": true,
+    "gitlens.heatmap.fadeLines": false,
+    "gitlens.heatmap.locations": [
+        "overview",
+        "gutter"
+    ],
+  }
