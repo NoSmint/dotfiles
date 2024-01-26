@@ -272,7 +272,6 @@ zshaddhistory() { whence ${${(z)1}[1]} >| /dev/null || return 1 }
 HISTORY_IGNORE='([bf]g *|cd *|cd ..|l[a,l,s,h,] *|less *|vi[m,] *)'
 
 export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519"
-export OPENAI_API_KEY=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
 export PATH=$PATH:~/.scripts
 
 # fix batcat autocomplete issue
