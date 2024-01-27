@@ -273,6 +273,7 @@ HISTORY_IGNORE='([bf]g *|cd *|cd ..|l[a,l,s,h,] *|less *|vi[m,] *)'
 
 export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519"
 export PATH=$PATH:~/.scripts
+export GPG_TTY=$(tty)
 
 # fix batcat autocomplete issue
 compdef _code batcat
