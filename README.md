@@ -22,6 +22,7 @@ The dotfiles in this repository are managed using a bare Git repository, a metho
 - `neofetch`
 - `Obsidian`
 - `lf`
+- `GPG Verification`
 
 ## Installation
 
