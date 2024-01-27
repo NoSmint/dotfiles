@@ -121,4 +121,6 @@
         "overview",
         "gutter"
     ],
+    "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
+    "markdown-preview-enhanced.codeBlockTheme": "github.css",
   }
