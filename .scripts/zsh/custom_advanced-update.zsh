@@ -44,7 +44,7 @@ update() {
 
     # Detecting Presence of Nala Modern Package Manager
     echo -e "\n[${GREEN}*${NC}] ${BLUE}Detecting Nala Package Manager...${NC}"
-    if command -v "nala" &>/dev/null && [ "$custom_param" != "apt" ]; then
+    if command -v "nala" &>/dev/null && [ -z $custom_param ]; then
 
         # Upgrade system packages with nala
         echo -e "[${GREEN}*${NC}] ${BLUE}Nala Detected${NC}"
@@ -59,10 +59,10 @@ update() {
             return 0
         fi
 
-    else
+    elif [[ $custom_param == a* ]]; then
 
         # Update system packages with apt
-        if [ "$custom_param" == "apt" ]; then
+        if [[ "$custom_param" == "a*" ]]; then
             echo -e "[${GREEN}*${NC}] ${RED}Nala Detection Overruled by Custom Parameter. Using apt.${NC}"
         else
             echo -e "[${GREEN}*${NC}] ${RED}Nala Detection Failed. Fallback to apt.${NC}"
@@ -101,6 +101,10 @@ update() {
             echo -e "[${RED}ERROR${NC}] Autoclean failed."
             return 0
         fi
+
+    else
+
+        echo -e "\n[${RED}*${NC}] [${RED}Parameter \"$@\" unknown. Exiting${NC}"
 
     fi
 

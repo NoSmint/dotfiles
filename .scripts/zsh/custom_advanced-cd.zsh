@@ -7,6 +7,7 @@ cd() {
     # Go to home without arguments
     [ -z "$*" ] && builtin cd && return
     # If directory exists, change to it
+    setopt localoptions nocaseglob
     [ -d "$*" ] && builtin cd "$*" && return
     [ "$*" = "-" ] && builtin cd "$*" && return
     [ "$*" = "!" ] && builtin cd $(TEST=$(fd . '.' -t d -H -d 1); echo $TEST | fzf -i -e --exit-0 --select-1 --reverse --cycle --height=~20 || pwd ) && return
@@ -17,7 +18,17 @@ cd() {
         .) builtin cd .; return;;
     esac
     # Finally, call z -> cd -> cd spezial mit fdfind
-    builtin cd $** 2>/dev/null && return || zshz "$*" && echo -e "\033[1;31mZ FOLDER CHANGE: \033[1;32m$(pwd)\033[0m" && return || builtin cd $(TEST=$(fd . '.' -t d -H -d 1); echo $TEST | fzf -i -e --exit-0 --select-1 --reverse --cycle --height=~20 || pwd ) && return
+    builtin cd $** 2>/dev/null && return || zshz "$*" && echo -e "\033[1;31mZ FOLDER CHANGE: \033[1;32m$(pwd)\033[0m" && return || builtin cd $(TEST=$(fd "$*" '.' -t d -H -d 3 --exclude 'NAS' --exclude 'DS220J'); echo $TEST | fzf -i -e --exit-0 --select-1 --reverse --cycle --height=~20 || pwd ) && return || builtin cd $(TEST=$(fd . '.' -t d -H -d 1); echo $TEST | fzf -i -e --exit-0 --select-1 --reverse --cycle --height=~20 || pwd ) && return
+}
+
+cdr() {
+    # Go to home without arguments
+    [ -z "$*" ] && builtin cd && return
+    # If directory exists, change to it
+    setopt localoptions nocaseglob
+    [ -d "$*" ] && builtin cd "$*" && return
+    [ "$*" = "-" ] && builtin cd "$*" && return
+    builtin cd $(TEST=$(fd "$*" '.' -t d -H --exclude 'NAS' --exclude 'DS220J'); echo $TEST | fzf -i -e --exit-0 --select-1 --reverse --cycle --height=~20 || pwd ) && return
 }
 
 cd-fzf() {

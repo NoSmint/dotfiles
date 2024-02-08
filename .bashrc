@@ -156,3 +156,4 @@ if ! shopt -oq posix; then
 fi
 
 export GPG_TTY=$(tty)
+. "$HOME/.cargo/env"
