@@ -34,3 +34,4 @@ alias cat='batcat -P'
 alias cleanup='hist delete "(cd|hist|ls|pwd|mkdir|rmdir|rm|touch|cp|mv|cat|more|less|head|tail|echo|grep|top|ps|kill|df|du|chmod|chown|ping|ifconfig|ip|netstat|(apt-get|apt)|yum|dnf|zypper|pacman)*"'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfile='config add -f'
+alias zmux=zellij
