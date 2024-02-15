@@ -10,5 +10,17 @@
       "command": "workbench.action.terminal.sendSequence",
       "args": { "text": "\u007f" }, // Sends ^?
       "when": "terminalFocus"
+    },
+    {
+      "key": "ctrl+tab",
+      "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+      "key": "ctrl+shift+s",
+      "command": "workbench.action.files.saveAll"
     }
   ]

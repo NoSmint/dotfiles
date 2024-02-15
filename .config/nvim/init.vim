@@ -58,7 +58,7 @@ nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme jellybeans
+:colorscheme twilight256
 
 " --- Just Some Notes ---
 "  " :PlugClean :PlugInstall :UpdateRemotePlugins

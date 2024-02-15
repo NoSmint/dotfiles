@@ -123,4 +123,5 @@
     ],
     "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
     "markdown-preview-enhanced.codeBlockTheme": "github.css",
+    "git.autofetch": true,
   }

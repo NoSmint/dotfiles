@@ -1,6 +1,8 @@
 #Custom Aliases to Impport into ~/.zshrc
 export WL=/usr/share/wordlists
 
+alias vi=nvim
+alias vim=nvim
 alias dt='dutree -s'
 alias http='python3 -m http.server 80'
 alias room='lf room'
